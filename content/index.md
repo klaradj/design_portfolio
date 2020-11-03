@@ -3,11 +3,10 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Presentation av Klara Djurberg
 ==========================
 
-The source for this page is in `content/index.md`.
-
-This is a sample home page written in markdown with some frontmatter defined.
-
-The pages make up a Anax site for demonstration purpose, it is something to start from.
+Hej och välkommen till min sida för design-kursen! Jag heter Klara, är 23 år och
+jag läser webbprogrammering utöver min pågående utbildning inom bioteknik. Förutom
+att programmera tycker jag om att laga mat, cykla och sticka. Jag tycker också om
+att vara ute i naturen och promenera.
