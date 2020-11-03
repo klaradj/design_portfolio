@@ -1,6 +1,6 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: image/byline.jpg
+Tagline: Välkommen till min sida!
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/dbwebb-se/design-v3
