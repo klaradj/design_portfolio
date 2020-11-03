@@ -11,4 +11,4 @@ jag läser webbprogrammering utöver min pågående utbildning inom bioteknik. F
 att programmera tycker jag om att laga mat, cykla och sticka. Jag tycker också om
 att vara ute i naturen och promenera.
 
-![Me](assets/img/me.jpg)
+![Me](assets/img/me.jpg){.me}
