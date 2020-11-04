@@ -9,6 +9,7 @@
 /* General */
 html {
     padding: 4rem;
+    background-color: rgb(245,245,245);
 }
 
 p {
@@ -28,9 +29,21 @@ p {
     justify-content: space-around;
 }
 
-#nav ul li {
+#nav li {
     padding: 1%;
     list-style: none;
+    background-color: rgb(235,248,235);
+    margin: 0.5%;
+    border-radius: 20%;
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-toggle {
+    display: none;
 }
 
 /* Main */
@@ -42,6 +55,13 @@ main {
 
 .me {
     width: 300px;
+    float: right;
+}
+
+/* footer */
+
+footer {
+    clear: both;
 }
 
 /* Mobil */
@@ -49,6 +69,15 @@ main {
 @media (max-width: 767px) {
     .hidden {
         display: none;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-toggle {
+        display: block;
     }
 
 }
