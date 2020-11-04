@@ -27,6 +27,11 @@
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <header class="site-header">
+        <div class = "welcome-part">
+            <span class = "site-name">Design</span>
+            <span class = "tagline">Välkommen till min sida i kursen om design</span>
+            <img class="flash-img" src="{{ base_url }}/image/logo_replacement2.jpg?sc=banner1&a=40,0,0,0">
+        </div>
         <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">Toggle Menu</span>

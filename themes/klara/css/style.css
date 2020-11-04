@@ -8,7 +8,6 @@
 
 /* General */
 html {
-    padding: 4rem;
     background-color: rgb(245,245,245);
 }
 
@@ -17,11 +16,21 @@ p {
     padding-bottom: 1rem;
 }
 
+main {
+    padding: 4rem;
+}
+
+/* header */
+.flash-img {
+    width: 100%;
+}
+
 /* Nav */
 
 
 #nav {
     background-color: green;
+    height: 4.6em;
 }
 
 #nav ul{
@@ -30,16 +39,24 @@ p {
 }
 
 #nav li {
-    padding: 1%;
+
     list-style: none;
-    background-color: rgb(235,248,235);
-    margin: 0.5%;
-    border-radius: 20%;
+
 }
 
 #nav a {
+    display: block;
+    height: 2.2em;
+    width: 5em;
+    text-align: center;
     text-decoration: none;
     color: black;
+    font-size: 1.3em;
+    background-color: rgb(235,248,235);
+    border-radius: 20%;
+    margin-top: 0.7em;
+    padding-top: 10%;
+
 }
 
 #nav-toggle {
@@ -49,12 +66,19 @@ p {
 /* Main */
 
 main {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 4rem;
+    min-height: 80vh;
+}
+
+.text-part {
+    margin-top: 2%;
+    float: left;
+    width: 60%;
+    line-height: 1.4;
 }
 
 .me {
-    width: 300px;
+    width: 30%;
     float: right;
 }
 
@@ -67,6 +91,17 @@ footer {
 /* Mobil */
 
 @media (max-width: 767px) {
+
+    .me {
+        float: none;
+        width: 100%
+    }
+
+    .text-part {
+        float: none;
+        width: 100%;
+    }
+
     .hidden {
         display: none;
     }
