@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 4rem;
+}
+
+.me {
+    width: 300px;
+}
