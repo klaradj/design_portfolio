@@ -21,22 +21,26 @@ main {
 }
 
 /* header */
+
 .flash-img {
     width: 100%;
 }
 
-.site-name {
+.header-text {
     position: absolute;
-    left: 72%;
-    top: 11%;
+    margin-top: 10%;
+    margin-left: 60%;
+    text-align: center;
+}
+
+.site-name {
+    display: block;
     color: rgb(225,238,225);
     font-size: 4em;
 }
 
 .tagline {
-    position: absolute;
-    left: 64%;
-    top: 22%;
+    display: block;
     color: rgb(225,238,225);
     font-size: 1.2em;
     text-align: center;
