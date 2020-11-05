@@ -25,13 +25,33 @@ main {
     width: 100%;
 }
 
+.site-name {
+    position: absolute;
+    left: 72%;
+    top: 11%;
+    color: rgb(225,238,225);
+    font-size: 4em;
+}
+
+.tagline {
+    position: absolute;
+    left: 64%;
+    top: 22%;
+    color: rgb(225,238,225);
+    font-size: 1.2em;
+    text-align: center;
+}
 
 
 /* Nav */
-
+.slide {
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
 
 #nav {
-    background-color: green;
+    background-color: #354538;
     height: 4.6em;
 }
 
@@ -54,7 +74,7 @@ main {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
-    background-color: rgb(235,248,235);
+    background-color: rgb(225,238,225);
     border-radius: 20%;
     margin-top: 0.7em;
     padding-top: 10%;
@@ -88,6 +108,7 @@ main {
 
 footer {
     clear: both;
+    text-align: center;
 }
 
 /* Mobil */
