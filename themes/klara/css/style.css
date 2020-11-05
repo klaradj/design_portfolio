@@ -27,23 +27,25 @@ main {
 }
 
 .header-text {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 60%;
+    margin-top: -0.5%;
+    position: relative;
+    padding: 5%;
     text-align: center;
+    background-image: radial-gradient(rgba(66,92,78,0), rgba(66,92,78,0.4));
+
 }
 
 .site-name {
     display: block;
-    color: rgb(225,238,225);
+    color: rgb(10,40,15);
     font-size: 4em;
 }
 
 .tagline {
     display: block;
-    color: rgb(225,238,225);
     font-size: 1.2em;
     text-align: center;
+    color: rgb(10,40,15);
 }
 
 
@@ -92,15 +94,15 @@ main {
 /* Main */
 
 main {
-    padding: 4rem;
     min-height: 80vh;
+    line-height: 1.4;
+    font-size: 1.2em;
 }
 
 .text-part {
     margin-top: 2%;
     float: left;
     width: 60%;
-    line-height: 1.4;
 }
 
 .me {
@@ -108,12 +110,28 @@ main {
     float: right;
 }
 
+/* undermeny */
+
+main ul {
+    list-style: none;
+}
+
 /* footer */
 
 footer {
     clear: both;
     text-align: center;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
 }
+
+.social {
+    margin-top: 1.4%;
+    margin-left: 0.5%;
+}
+
+
 
 /* Mobil */
 

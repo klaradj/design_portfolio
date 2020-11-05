@@ -28,11 +28,12 @@
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <header class="site-header">
         <div class = "welcome-part">
+            <img class="flash-img" src="{{ base_url }}/image/logo_replacement2.jpg?sc=banner1&a=40,0,0,0">
             <div class = "header-text">
                 <span class = "site-name">Design</span>
                 <span class = "tagline">Välkommen till min sida i kursen om design</span>
             </div>
-            <img class="flash-img" src="{{ base_url }}/image/logo_replacement2.jpg?sc=banner1&a=40,0,0,0">
+
         </div>
         <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
@@ -55,6 +56,9 @@
         </div>
     </main>
     <footer>
+        <p>
+            Koden till den här hemsidan finns på min git-hub sida:
+        </p>
         <div class="social">
             <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
             {% for social in pages["_meta"].meta.social %}
@@ -64,9 +68,6 @@
                 </a>
             {% endfor %}
         </div>
-        <p>
-            En footer med lite text.
-        </p>
     </footer>
 
     <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
