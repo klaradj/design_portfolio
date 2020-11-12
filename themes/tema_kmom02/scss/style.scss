@@ -1,3 +1,11 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 @import '../../node_modules/normalize.css/normalize';
 @import 'navbar';
 @import 'variables';
@@ -18,9 +26,29 @@ body {
     width: 100%;
     height: 15rem;
     background-image: radial-gradient($header-background-dark, $header-background-light);
-    margin-top: -0.5%;
+    margin-top: -0.3rem;
     color: $grass-green;
+    text-align: center;
+    position: relative;
 
+    .site-name {
+        display: block;
+        font-size: 4.5rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Parisienne', cursive;
+    }
+
+    .tagline {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .container {
@@ -28,15 +56,20 @@ body {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+
 }
 
-
+h1 {
+    color: $xiketic;
+}
 
 .text-part {
     width: 75%;
     float:left;
-    font-size: 1.2rem;
-    line-height: 1.2;
+
 }
 
 .me {
