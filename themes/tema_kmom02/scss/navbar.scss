@@ -1,0 +1,49 @@
+@import 'variables';
+
+.slide {
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
+
+#nav {
+    background-color: #354538;
+    height: 4.8em;
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    li {
+
+        list-style: none;
+
+    }
+
+    a {
+        display: block;
+        height: 2.8rem;
+        min-width: 6rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        background-color: rgb(225,238,225);
+        border-radius: 20%;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .navchoice {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#nav-toggle {
+    display: none;
+}
