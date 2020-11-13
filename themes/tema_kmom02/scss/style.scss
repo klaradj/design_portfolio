@@ -4,17 +4,17 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
 @import '../../node_modules/normalize.css/normalize';
+@import 'typography';
 @import 'navbar';
 @import 'variables';
 
-$header-background-light: rgb(red($grass-green), green($grass-green), blue($grass-green));
-$header-background-dark: rgba(red($light-grey), green($light-grey), blue($light-grey), 0.5);
+
+
 
 body {
     background-color: $light-grey;
+    overflow-y: scroll;
 }
 
 .flash-img {
@@ -59,21 +59,7 @@ body {
     margin-right: auto;
     font-size: 1.2rem;
     line-height: 1.2;
-
-    h1, p {
-        box-sizing: border-box;
-        width: 70%;
-        float:left;
-        padding-right: 5%;
-    }
-
-    h2, p img {
-        padding-top: 1%;
-        margin-left: -2%;
-    }
-
-
-
+    min-height: 30rem;
 }
 
 h1, h2 {
@@ -85,12 +71,10 @@ h1, h2 {
     box-sizing: border-box;
     width: 75%;
     float:left;
-    min-height: 800px;
     padding-right: 3%;
 }
 
 .me {
-    color: $racing-green;
     box-sizing: border-box;
     width: 25%;
     float: right;
@@ -101,4 +85,13 @@ h1, h2 {
 footer {
     clear: both;
     text-align: center;
+    padding-bottom: 5%;
+
+    .social a {
+        padding-left: 1%;
+        padding-right: 1%;
+        text-decoration: none;
+    }
 }
+
+@import 'responsive';
