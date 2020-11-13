@@ -32,6 +32,7 @@ body {
     position: relative;
 
     .site-name {
+        color: $dark-purple;
         display: block;
         font-size: 4.5rem;
         position: absolute;
@@ -59,24 +60,41 @@ body {
     font-size: 1.2rem;
     line-height: 1.2;
 
+    h1, p {
+        box-sizing: border-box;
+        width: 70%;
+        float:left;
+        padding-right: 5%;
+    }
+
+    h2, p img {
+        padding-top: 1%;
+        margin-left: -2%;
+    }
+
+
 
 }
 
-h1 {
+h1, h2 {
     color: $xiketic;
 }
 
+
 .text-part {
+    box-sizing: border-box;
     width: 75%;
     float:left;
-
+    min-height: 800px;
+    padding-right: 3%;
 }
 
 .me {
+    color: $racing-green;
     box-sizing: border-box;
     width: 25%;
     float: right;
-    padding-left: 3%;
+
 
 }
 

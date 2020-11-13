@@ -6517,6 +6517,7 @@ body {
   position: relative;
 }
 .header-text .site-name {
+  color: #30011e;
   display: block;
   font-size: 4.5rem;
   position: absolute;
@@ -6542,21 +6543,34 @@ body {
   font-size: 1.2rem;
   line-height: 1.2;
 }
+.container h1, .container p {
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
+  padding-right: 5%;
+}
+.container h2, .container p img {
+  padding-top: 1%;
+  margin-left: -2%;
+}
 
-h1 {
+h1, h2 {
   color: #14080e;
 }
 
 .text-part {
+  box-sizing: border-box;
   width: 75%;
   float: left;
+  min-height: 800px;
+  padding-right: 3%;
 }
 
 .me {
+  color: #214e34;
   box-sizing: border-box;
   width: 25%;
   float: right;
-  padding-left: 3%;
 }
 
 footer {
