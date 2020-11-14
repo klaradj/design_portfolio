@@ -6459,6 +6459,8 @@ template {
 
 html {
   font-size: 100%;
+  font-family: serif;
+  color: #14080e;
 }
 
 .slide {
@@ -6489,6 +6491,7 @@ html {
   border-radius: 20%;
   margin-top: 1rem;
   position: relative;
+  color: #14080e;
 }
 .nav .navchoice {
   position: absolute;
