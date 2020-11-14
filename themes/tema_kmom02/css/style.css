@@ -6463,43 +6463,41 @@ html {
 
 .slide {
   overflow-y: hidden !important;
-  -webkit-transition: height 0.5s ease-in !important;
   transition: height 0.5s ease-in !important;
 }
 
-#nav {
+.nav {
   background-color: #354538;
   height: 4.8em;
 }
-#nav ul {
+.nav ul {
   display: flex;
   justify-content: space-around;
   margin: 0;
 }
-#nav li {
+.nav li {
   list-style: none;
 }
-#nav a {
+.nav a {
   display: block;
   height: 2.8rem;
   min-width: 6rem;
   text-align: center;
   text-decoration: none;
-  color: black;
   font-size: 1.3rem;
   background-color: #e1eee1;
   border-radius: 20%;
   margin-top: 1rem;
   position: relative;
 }
-#nav .navchoice {
+.nav .navchoice {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#nav-toggle {
+.nav-toggle {
   display: none;
 }
 
@@ -6550,7 +6548,8 @@ body {
   min-height: 30rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #14080e;
 }
 
@@ -6603,30 +6602,30 @@ footer .social a {
     margin-right: auto;
   }
 
-  #nav {
+  .nav {
     height: auto;
   }
 
-  #nav ul {
+  .nav ul {
     flex-direction: column;
   }
 
-  #nav li {
+  .nav li {
     margin-left: auto;
     margin-right: auto;
     transform: translate(-25%, 0);
   }
 
-  #nav a {
+  .nav a {
     margin: 10%;
     padding: 10%;
   }
 
-  #nav-toggle {
+  .nav-toggle {
     display: block;
   }
 
-  #nav * {
+  .nav * {
     margin: 0;
     padding: 0;
   }

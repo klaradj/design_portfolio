@@ -24,32 +24,30 @@
         margin-right: auto;
     }
 
-
-
-    #nav {
+    .nav {
         height: auto;
     }
 
-    #nav ul {
+    .nav ul {
         flex-direction: column;
     }
 
-    #nav li {
+    .nav li {
         margin-left: auto;
         margin-right: auto;
         transform: translate(-25%, 0);
     }
 
-    #nav a {
+    .nav a {
         margin: 10%;
         padding: 10%;
     }
 
-    #nav-toggle {
+    .nav-toggle {
         display: block;
     }
 
-    #nav * {
+    .nav * {
         margin: 0;
         padding: 0;
 

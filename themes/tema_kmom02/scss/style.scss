@@ -62,7 +62,8 @@ body {
     min-height: 30rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: $xiketic;
 }
 
@@ -70,7 +71,7 @@ h1, h2 {
 .text-part {
     box-sizing: border-box;
     width: 75%;
-    float:left;
+    float: left;
     padding-right: 3%;
 }
 
