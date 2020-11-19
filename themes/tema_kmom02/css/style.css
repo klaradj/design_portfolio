@@ -6508,6 +6508,7 @@ html {
 
 .landingpage {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2rem;
   row-gap: 1em;
 }
@@ -6583,10 +6584,6 @@ h1 {
 @media (max-width: 600px) {
   .container-kmom {
     flex-direction: column;
-  }
-
-  .container {
-    padding-top: 0%;
   }
 
   .nav-sub-menu {

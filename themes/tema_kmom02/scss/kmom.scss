@@ -13,6 +13,7 @@
 
 .sub-menu {
     width: 10rem;
+
     a {
         text-decoration: none;
         color: $dark-purple;
@@ -24,6 +25,7 @@
         padding: 0;
 
     }
+
     li {
         padding-top: 1rem;
     }
@@ -41,10 +43,6 @@
         flex-direction: column;
     }
 
-    .container {
-        padding-top: 0%;
-    }
-
     .nav-sub-menu {
         border: 1px solid $cinereous;
         border-radius: 0.8rem;
@@ -57,7 +55,7 @@
         }
 
         .sub-menu {
-            display : none;
+            display: none;
 
         }
 
