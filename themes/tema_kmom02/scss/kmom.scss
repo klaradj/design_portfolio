@@ -1,0 +1,28 @@
+@import 'variables';
+
+.container-kmom {
+    display: flex;
+}
+
+.checkbox {
+    display: none;
+}
+
+.sub-menu {
+    width: 10rem;
+    a {
+        text-decoration: none;
+        color: $dark-purple;
+        font-size: 110%;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+    }
+    li {
+        padding-top: 1rem;
+    }
+
+}

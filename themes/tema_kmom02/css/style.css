@@ -6504,6 +6504,76 @@ html {
   display: none;
 }
 
+.landingpage {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 1em;
+}
+
+h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.kmom-box {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #354538;
+}
+.kmom-box h2 {
+  margin: 0;
+  background-color: #354538;
+  color: whitesmoke;
+  padding: 1rem;
+}
+.kmom-box p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.kmom-box a {
+  color: #30011e;
+  text-align: left;
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.kmom-box10 {
+  grid-column: span 3;
+}
+
+@media (max-width: 800px) {
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+  .landingpage .kmom-box10 {
+    grid-column: span 1;
+  }
+}
+.container-kmom {
+  display: flex;
+}
+
+.checkbox {
+  display: none;
+}
+
+.sub-menu {
+  width: 10rem;
+}
+.sub-menu a {
+  text-decoration: none;
+  color: #30011e;
+  font-size: 110%;
+}
+.sub-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.sub-menu li {
+  padding-top: 1rem;
+}
+
 body {
   background-color: whitesmoke;
   overflow-y: scroll;
