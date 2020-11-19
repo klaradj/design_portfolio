@@ -6502,6 +6502,8 @@ html {
 
 .nav-toggle {
   display: none;
+  font-size: 125%;
+  padding: 0.5rem 2rem;
 }
 
 .landingpage {
@@ -6554,7 +6556,7 @@ h1 {
   display: flex;
 }
 
-.checkbox {
+.nav-sub-menu label {
   display: none;
 }
 
@@ -6574,6 +6576,37 @@ h1 {
   padding-top: 1rem;
 }
 
+.checkbox {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .container-kmom {
+    flex-direction: column;
+  }
+
+  .container {
+    padding-top: 0%;
+  }
+
+  .nav-sub-menu {
+    border: 1px solid #93827f;
+    border-radius: 0.8rem;
+  }
+  .nav-sub-menu label {
+    display: block;
+    text-align: right;
+    padding: 1rem;
+    color: #30011e;
+  }
+  .nav-sub-menu .sub-menu {
+    display: none;
+  }
+  .nav-sub-menu .checkbox:checked + .sub-menu {
+    margin-left: 25px;
+    display: block !important;
+  }
+}
 body {
   background-color: whitesmoke;
   overflow-y: scroll;
@@ -6658,6 +6691,10 @@ footer .social a {
   }
 }
 @media (max-width: 600px) {
+  .container {
+    padding-top: 0%;
+  }
+
   .hidden {
     display: none;
   }
