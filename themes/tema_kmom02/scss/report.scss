@@ -46,6 +46,8 @@ h1 {
 
 @media (max-width:800px) {
     .landingpage {
+        grid-template-columns: 1fr;
+
         h1 {
             grid-column: span 1;
         }
