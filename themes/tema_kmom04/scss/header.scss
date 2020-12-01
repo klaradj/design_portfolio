@@ -1,0 +1,35 @@
+.flash-img {
+    width: 100%;
+
+}
+
+.header-text {
+    width: 100%;
+    height: 15rem;
+    background-image: radial-gradient($header-background-dark, $header-background-light);
+    margin-top: -0.3rem;
+    color: $header-color;
+    text-align: center;
+    position: relative;
+
+    .site-name {
+        color: $accent-color;
+        display: block;
+        font-size: 4.5rem;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Parisienne', cursive;
+    }
+
+    .tagline {
+        display: block;
+        font-size: 2rem;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $tagline-color;
+    }
+}

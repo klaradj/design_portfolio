@@ -1,0 +1,59 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import 'variables-dark';
+@import '../../node_modules/normalize.css/normalize';
+@import 'typography';
+@import 'navbar';
+@import 'report';
+@import 'kmom';
+@import 'header';
+
+
+body {
+    background-color: $background-color;
+    overflow-y: scroll;
+}
+
+.flash-img {
+    filter: grayscale(20%);
+
+}
+
+.container {
+    padding: 5%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    min-height: 30rem;
+}
+
+h1,
+h2 {
+    color: $text-color;
+}
+
+
+.text-part {
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    padding-right: 3%;
+}
+
+.me {
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    filter: grayscale(40%);
+
+}
+
+
+@import 'footer';
+@import 'responsive';

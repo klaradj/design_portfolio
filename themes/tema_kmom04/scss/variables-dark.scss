@@ -1,0 +1,22 @@
+$line-color: #93827f;
+$header-color: #354538;
+$background-color: rgb(245, 245, 245);
+$text-color: #14080e;
+$accent-color: #453635;
+$background-nav: rgb(225, 238, 225);
+
+
+
+$line-color: #93827f;
+$header-color: black;
+$background-color: #333333;
+$text-color: rgb(235, 235, 235);
+$accent-color: #93827f;
+$background-nav: #333333;
+$tagline-color: #E0C6C1;
+$accent-color: #E0C6C1;
+$link-color: rgb(245, 245, 245);
+
+
+$header-background-dark: rgb(red($header-color), green($header-color), blue($header-color));
+$header-background-light: rgba(red($background-color), green($background-color), blue($background-color), 0.5);
