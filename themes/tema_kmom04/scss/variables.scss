@@ -24,6 +24,7 @@ $accent-color: complement($header-color);
 $background-nav: rgb(225, 238, 225);
 $tagline-color: #354538;
 $link-color: #14080e;
+$kmombox-h2: rgb(245, 245, 245);
 
 $header-background-light: rgb(red($header-color), green($header-color), blue($header-color));
 $header-background-dark: rgba(red($background-color), green($background-color), blue($background-color), 0.5);
