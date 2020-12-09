@@ -17,8 +17,10 @@ h1 {
     grid-column: span 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border: 1px solid $header-color;
-
+    max-height: 15rem;
+    
     h2 {
         margin: 0;
         background-color: $header-color;
@@ -35,6 +37,7 @@ h1 {
         color: $accent-color;
         text-align: left;
         align-self: flex-end;
+        justify-self: end;
         padding: 1rem;
     }
 }
@@ -43,6 +46,9 @@ h1 {
     grid-column: span 3;
 
 }
+
+
+
 
 @media (max-width:800px) {
     .landingpage {

@@ -6532,7 +6532,9 @@ h1 {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #354538;
+  max-height: 15rem;
 }
 .kmom-box h2 {
   margin: 0;
@@ -6548,6 +6550,7 @@ h1 {
   color: #453542;
   text-align: left;
   align-self: flex-end;
+  justify-self: end;
   padding: 1rem;
 }
 

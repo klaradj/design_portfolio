@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}
+    {% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+
+    {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
+    <!-- Insert font choice here -->
+    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
+    <!-- config.session.theme == "dark"-->
+    {% if config.session.theme == "dark" %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+    {% else %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% endif %}
+
+</head>
+<!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <header class="site-header">
+        <div class = "welcome-part">
+            <img class="flash-img" src="{{ base_url }}/image/logo_replacement2.jpg?sc=banner1&a=40,0,0,0">
+            <div class = "header-text">
+                <span class = "site-name">Design</span>
+                <span class = "tagline">Välkommen till min sida i kursen om design</span>
+            </div>
+
+        </div>
+        <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
+            <span class="sr-only">Toggle Menu</span>
+        </a>
+        <div class="nav" id="nav" role="navigation" tabindex="-1">
+        <div class="nav">
+            <ul>
+                {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                    <a href="{{ page.url }}"><div class="navchoice">{{ page.title }}</div></a>
+                    </li>
+                    {% endfor %}
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container container-kmom">
+        <div class= "nav-sub-menu">
+            <label for="toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggle" class="checkbox"/>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="01_colors.md">01 colors</a></li>
+                    <li><a href="02_load.md">02 load</a></li>
+                    <li><a href="03_design_principles.md">03 Design principles</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="kmomXX">
+            {{ content }}
+        </div>
+    </main>
+    <footer>
+        <p>
+            Användbara länkar:
+        </p>
+        <div class="social">
+            <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+            {% for social in pages["_meta"].meta.social %}
+                <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                    <i class="{{ social.icon }}" aria-hidden="true"></i>
+                    <span class="sr-only">{{ social.title }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    </footer>
+
+    <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>
+</body>
+</html>
