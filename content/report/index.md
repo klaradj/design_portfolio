@@ -38,7 +38,7 @@ Report
 
 <div class="kmom-box">
     <h2>Kmom04</h2>
-    <p>Början på text</p>
+    <p>Arbetet med skrivuppgiften...</p>
     <a href="report/kmom04">
         <i class="fas fa-angle-right" aria-hidden="true"></i>
         <span class="sr-only">Kmom04</span>
