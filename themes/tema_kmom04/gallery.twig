@@ -57,11 +57,22 @@
     </header>
 
     <main>
-        <div class="container">
-            {% for im in meta.image %}
-                <img src="{{base_url}}/{{ im.url }}" alt = "{{im.alt}}">
-
-            {% endfor %}
+        <div>
+            <div class="gallery">
+                {% for im in meta.image %}
+                <div class=img-container>
+                    <a href="{{base_url}}/{{ im.url }}">
+                        <picture>
+                            <source media="(min-width: 1500px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=1000">
+                            <source media="(min-width: 1000px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=500">
+                            <source media="(min-width: 668px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=334">
+                            <source media="(min-width: 376px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=668">
+                            <img src="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=376" alt = "{{im.alt}}">
+                        <picture>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </main>
     <footer>
