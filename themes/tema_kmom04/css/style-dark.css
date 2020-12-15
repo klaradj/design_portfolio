@@ -6643,6 +6643,10 @@ h1 {
   color: #e0c6c1;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #333;
   overflow-y: scroll;
