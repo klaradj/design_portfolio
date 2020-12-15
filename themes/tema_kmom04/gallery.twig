@@ -57,22 +57,11 @@
     </header>
 
     <main>
-        <div class="container container-kmom">
-        <div class= "nav-sub-menu">
-            <label for="toggle">
-                <i class="fa fa-bars"></i>
-            </label>
-            <input type="checkbox" id="toggle" class="checkbox"/>
-            <div class="sub-menu">
-                <ul>
-                    <li><a href="01_colors">01 colors</a></li>
-                    <li><a href="02_load">02 load</a></li>
-                    <li><a href="03_design_principles">03 Design principles</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="kmomXX">
-            {{ content }}
+        <div class="container">
+            {% for im in meta.image %}
+                <img src="{{base_url}}/{{ im.url }}" alt = "{{im.alt}}">
+
+            {% endfor %}
         </div>
     </main>
     <footer>
