@@ -6,7 +6,7 @@ Template: analysis
 Laddningstid på tre mäklarsidor
 =======================
 
-Mäklares webbsidor syftar till att visa upp lägenheter och locka till köp. Det är viktigt för mäklare att kunna visa upp många bilder av god kvalité på lägenheten. Samtidgt får det inte gå ut över laddningstider för deras sida, eftersom det är viktigt att besökare till webbplatsen stannar kvar och fortsätter titta på bilder. Den här rapporten behandlar laddningstider för tre fastighetsförmedlingars webbplatser. Webbplatserna analyserades utifrån tiden det tog att ladda sidan samt vilka resurser som de använder sig och hur webbplatsernas laddningstider kan bli bättre. Webbplatserna analyserades främst ur perspektivet sett från bostadsspekulanter som letar efter en bostad eftersom de antas utgöra den största gruppen av besökare på webbplatserna.
+Mäklares webbsidor syftar till att visa upp lägenheter och locka till köp. Det är viktigt för mäklare att kunna visa upp många bilder av god kvalité på bostaden. Samtidgt får det inte gå ut över laddningstider för deras sida, eftersom det är viktigt att besökare till webbplatsen stannar kvar och fortsätter titta på bilder. Den här rapporten behandlar laddningstider för tre fastighetsförmedlingars webbplatser. Webbplatserna analyserades utifrån tiden det tog att ladda sidan samt vilka resurser som de använder sig och hur webbplatsernas laddningstider kan bli bättre. Webbplatserna analyserades främst ur perspektivet sett från bostadsspekulanter som letar efter en bostad eftersom de antas utgöra den största gruppen av besökare på webbplatserna.
 
 
 Urval
@@ -26,8 +26,20 @@ Medelbetyget för både mobil och desktop för alla tre webbsidor på varje webb
 
 Resultat
 -----------------------
+Snapshots från de tre undersöka webbplatserna kan ses i Figur 1, 3 och 3.
 
-Dokumentera dina resultat från din studie. Berätta vad du kom fram till, vilka resultat du hittade och observerade.
+<figure>
+    <img src="../assets/img/operation_smile.PNG" alt="Operation smiles webbsida">
+    <figcaption>Figure 1. Snapshot av webbplatsen för Svensk Fastighetsförmedling.</figcaption>
+</figure>
+
+<picture>
+    <source media="(min-width: 1500px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=1000">
+    <source media="(min-width: 1000px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=500">
+    <source media="(min-width: 668px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=334">
+    <source media="(min-width: 376px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=668">
+    <img src="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=376" alt = "{{im.alt}}">
+<picture>
 
 Det totala medelbetyget i Google pagespeed var högst för Svensk Fastighetsförmedlings webbplats (69), näst högst för Länsförsäkringar Fastighetsförmedling (64) och lägst för Historiska Hem (51). Betyget var högre för desktop än för mobil för alla undersökta sidor, och det totala medelbetyget för mobil var 46 jämfört med 77 för desktop.
 
