@@ -9,7 +9,6 @@ Template: analysis
 Hur använder tre välgörenhetsorganisationer färger på sina webbplatser?
 =======================
 
-Skriv en eller två rader om vad uppgiften handlar om.
 I den här rapporten undersöks vilka färger tre välgörenhetsorganisationer använder på sina webbplatser. Syftet är att undersöka hur färgerna används för att signalera känslor.
 
 Urval
@@ -127,4 +126,4 @@ I likhet med Next Generation Nepal har UNHCR en enklare design med enklare färg
 
 Gemensamt för alla tre organisationer är att de använder färgglada och utstickande färger på donera knappar och liknande. Även de organisationer med enklare färgval har valt att ha en accentfärg eller signalfärg på knappar för att ge pengar till deras verksamhet.
 
-Texten är skriven av Klara Djurberg. 
+Texten är skriven av Klara Djurberg.
