@@ -29,17 +29,35 @@ Resultat
 Snapshots från de tre undersöka webbplatserna kan ses i Figur 1, 3 och 3.
 
 <figure>
-    <img src="../assets/img/operation_smile.PNG" alt="Operation smiles webbsida">
+    <picture>
+        <source media="(min-width: 1500px)" srcset="../image/svensk_fast.PNG?">
+        <source media="(min-width: 1000px)" srcset="../image/svensk_fast.PNG?w=1000">
+        <source media="(min-width: 700px)" srcset="../image/svensk_fast.PNG?w=700">
+        <img src="../image/svensk_fast.PNG?w=500" alt = "Svensk fastighetsförmedlings webbsida">
+    <picture>
     <figcaption>Figure 1. Snapshot av webbplatsen för Svensk Fastighetsförmedling.</figcaption>
 </figure>
 
-<picture>
-    <source media="(min-width: 1500px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=1000">
-    <source media="(min-width: 1000px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=500">
-    <source media="(min-width: 668px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=334">
-    <source media="(min-width: 376px)" srcset="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=668">
-    <img src="{{base_url}}/{{ im.url }}?crop-to-fit&aspect-ratio=4:3&w=376" alt = "{{im.alt}}">
-<picture>
+<figure>
+    <picture>
+        <source media="(min-width: 1500px)" srcset="../image/lansfors.PNG?">
+        <source media="(min-width: 1000px)" srcset="../image/lansfors.PNG?w=1000">
+        <source media="(min-width: 700px)" srcset="../image/lansfors.PNG?w=700">
+        <img src="../image/lansfors.PNG?w=500" alt = "Länsförsäkringar fastighetsförmedlings webbsida">
+    <picture>
+    <figcaption>Figure 2. Snapshot av webbplatsen för Länsförsäkringar Fastighetsförmedling.</figcaption>
+</figure>
+
+<figure>
+    <picture>
+        <source media="(min-width: 1500px)" srcset="../image/historiska_hem.PNG?">
+        <source media="(min-width: 1000px)" srcset="../image/historiska_hem.PNG?w=1000">
+        <source media="(min-width: 700px)" srcset="../image/historiska_hem.PNG?w=700">
+        <img src="../image/historiska_hem?w=500" alt = "Historiska Hems webbsida">
+    <picture>
+    <figcaption>Figure 3. Snapshot av webbplatsen för Historiska Hem.</figcaption>
+</figure>
+
 
 Det totala medelbetyget i Google pagespeed var högst för Svensk Fastighetsförmedlings webbplats (69), näst högst för Länsförsäkringar Fastighetsförmedling (64) och lägst för Historiska Hem (51). Betyget var högre för desktop än för mobil för alla undersökta sidor, och det totala medelbetyget för mobil var 46 jämfört med 77 för desktop.
 
