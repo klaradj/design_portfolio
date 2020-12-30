@@ -1,6 +1,7 @@
-.video-container {
+.kmomXX {
+    display: flex;
     width: 100%;
-    display: block;
+    flex-direction: column;
 }
 
 .embed-container {
@@ -9,6 +10,7 @@
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
+
 }
 
 .embed-container iframe,

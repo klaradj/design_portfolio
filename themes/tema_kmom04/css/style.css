@@ -6678,9 +6678,10 @@ img {
     padding: 1rem 3rem;
   }
 }
-.video-container {
+.kmomXX {
+  display: flex;
   width: 100%;
-  display: block;
+  flex-direction: column;
 }
 
 .embed-container {
